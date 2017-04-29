@@ -108,3 +108,5 @@ function exit(){
 }
 
 listProducts();
+
+module.exports = displayTable;
