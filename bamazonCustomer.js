@@ -8,11 +8,14 @@ var Table = require('tty-table/automattic-cli-table');
 
 var itemList = [];
 
+
+//connection to MySQL
 connection.connect(function(err) {
     if (err) throw err;
     // console.log('Connected to DB Successful');
 });
 
+//Load point of the app which grabs all rows from the DB and displays them
 function listProducts() {
     connection.query('SELECT * FROM products', function(err, res) {
         
@@ -25,6 +28,7 @@ function listProducts() {
     });
 }
 
+// Function for formatting and displaying table data. 
 function displayTable(data) {
     var table = new Table({
         head: ['Item ID', 'Name', 'Department', 'Stock', 'Price'],
@@ -42,6 +46,7 @@ function displayTable(data) {
     console.log(table.toString());
 };
 
+// Commandline prompt for user to select an item and ammount
 function userPrompt(items) {
     prompt([{
         type: 'list',
@@ -86,6 +91,7 @@ function userPrompt(items) {
     });
 }
 
+// Given a functional update to the DB, this will display what the user purchased and the total cost, the application then exits.
 function displayTotal(item, stock){
 	console.log('Thank you for your purchse of '+ item);
 	connection.query('SELECT price FROM products WHERE product_name = ?', [item], function(err, res){
