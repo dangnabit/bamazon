@@ -24,17 +24,17 @@ Also remember to run `npm i` in your console to install all required packages.
 ## Bamazon Customer
 
 `node bamazonCustomer.js`
-![customer_view](./pics/bamazoncustomerview1.png)
+![customer_view](./pics/bamazoncustomerview1.PNG)
 
 This application will allow you to view and purchase items listed in the database. After selecting an item from the list, the user is prompted for a purchase ammount. If the ammount is available, the purchase will continue and the user is given their total purchase cost. 
 
-![customer_view](./pics/bamazoncustomerview2.png)
+![customer_view](./pics/bamazoncustomerview2.PNG)
 
 ---
 ## Bamazon Manager
 
 `node bamazonManager.js`
-![manager_view](./pics/bamazonmanagerview.png)
+![manager_view](./pics/bamazonmanagerview.PNG)
 
 This application allows a manager to handle inventory in the database. They can view low inventory, add inventory, add new products, and view all products available.
 
