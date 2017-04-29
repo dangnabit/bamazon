@@ -21,9 +21,10 @@ module.exports = connection;
 Be sure to include a password if your database requires one, and the name of your database. 
 Also remember to run `npm i` in your console to install all required packages.
 
-## Bamazon Customer
+## Bamazon Customer Portal
 
-`node bamazonCustomer.js`
+**`node bamazonCustomer.js`**
+
 ![customer_view](./pics/bamazoncustomerview1.PNG)
 
 This application will allow you to view and purchase items listed in the database. After selecting an item from the list, the user is prompted for a purchase ammount. If the ammount is available, the purchase will continue and the user is given their total purchase cost. 
@@ -33,7 +34,8 @@ This application will allow you to view and purchase items listed in the databas
 ---
 ## Bamazon Manager
 
-`node bamazonManager.js`
+**`node bamazonManager.js`**
+
 ![manager_view](./pics/bamazonmanagerview.PNG)
 
 This application allows a manager to handle inventory in the database. They can view low inventory, add inventory, add new products, and view all products available.
